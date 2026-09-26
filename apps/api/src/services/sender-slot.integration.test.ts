@@ -10,8 +10,8 @@ integration('Redis sender-slot reservations', () => {
   const campaignId = randomUUID();
 
   beforeAll(async () => {
-    ({ reserveSenderSlot } = await import('./sender-slot'));
-    ({ redis } = await import('../infra/redis'));
+    ({ reserveSenderSlot } = await import('./sender-slot.js'));
+    ({ redis } = await import('../infra/redis.js'));
     await redis.ping();
   });
 
