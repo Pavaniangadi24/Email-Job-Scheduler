@@ -1,0 +1,51 @@
+{
+  "name": "@scheduler/api",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "db:generate": "tsx src/scripts/prisma-cli.ts generate",
+    "db:migrate": "tsx src/scripts/prisma-cli.ts migrate deploy",
+    "db:dev": "tsx src/scripts/prisma-cli.ts migrate dev",
+    "ethereal:setup": "tsx src/scripts/create-ethereal.ts"
+  },
+  "dependencies": {
+    "@bull-board/api": "^6.7.8",
+    "@bull-board/express": "^6.7.8",
+    "@elastic/elasticsearch": "^8.17.0",
+    "@prisma/client": "^6.2.1",
+    "bullmq": "^5.34.10",
+    "connect-pg-simple": "^10.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "helmet": "^8.0.0",
+    "ioredis": "^5.4.2",
+    "morgan": "^1.10.0",
+    "nodemailer": "^10.0.10",
+    "pg": "^8.13.1",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/connect-pg-simple": "^7.0.3",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/express-session": "^1.18.1",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.13.4",
+    "@types/passport": "^1.0.17",
+    "@types/passport-google-oauth20": "^2.0.16",
+    "@types/pg": "^8.11.11",
+    "prisma": "^6.2.1",
+    "tsx": "^4.19.2",
+    "vitest": "^3.0.5"
+  }
+}
