@@ -103,3 +103,4 @@ Set `RUN_REDIS_INTEGRATION=1` when running the API tests to include the Redis-ba
 Use small, named commits for coherent milestones (infrastructure, backend, dashboard/docs), then push the verified history. That gives reviewers useful checkpoints without publishing broken intermediate commits. The configured destination requested for this assignment is `https://github.com/Pavaniangadi24/Email-Job-Scheduler.git`; keep the repository private and grant access to `Mitrajit` and `Yadav036` in GitHub repository settings. Never stage `.env`.
 
 For the demo, show sign-in, a CSV schedule, the scheduled and sent views, the authenticated queue board, the Ethereal preview, a short-delay/hourly-cap test with Slack connected, and a restart with a future job still pending and later delivered.
+For the Pavani-owned, free-tier Oracle deployment procedure (including HTTPS, OAuth callbacks, and cost limits), follow [DEPLOY-FREE-ORACLE.md](DEPLOY-FREE-ORACLE.md).
